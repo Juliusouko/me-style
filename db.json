@@ -1,1 +1,31 @@
-{}
+{
+  "posts": [
+    {
+      "id": "1",
+      "likes": 30,
+      "title": "nike",
+      "body": "nike shoes"
+    },
+    {
+      "id": "2",
+      "likes": 15,
+      "title": "puma",
+      "body": "This is Puma RS SHOES"
+    },
+    {
+      "title": "addidas",
+      "body": "This is addidas shoes",
+      "likes": 89,
+      "id": "4"
+    }
+  ],
+  "polls": [
+    {
+      "id": "1",
+      "question": "Do you prefer Nikey, Puma or Addidas?",
+      "answerA": "Nikey",
+      "answerB": "Puma",
+      "answerC": "Addidas"
+    }
+  ]
+}
