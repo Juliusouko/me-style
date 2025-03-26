@@ -10,13 +10,13 @@
       "id": "2",
       "likes": 15,
       "title": "puma",
-      "body": "This is Puma RS SHOES"
+      "body": "This is puma rs shoes"
     },
     {
       "title": "addidas",
       "body": "This is addidas shoes",
       "likes": 89,
-      "id": "4"
+      "id": "3"
     }
   ],
   "polls": [

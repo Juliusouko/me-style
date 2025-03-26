@@ -20,7 +20,7 @@ nav h1 {
 nav a {
   color: white;
   text-decoration: none;
-  background: #36cca2;
+  background: rgb(80, 80, 231);
   padding: 10px;
   border-radius: 10px;
 }
@@ -49,13 +49,12 @@ textarea {
 }
 .post h2 {
   margin: 0;
-  color: purple;
 }
 .post p {
   margin-top: 0;
 }
 .post a {
-  color: white;
+  color: black;
 }
 
 .container {
@@ -78,4 +77,13 @@ textarea {
   width: 200px;
   padding: 0.5rem;
   border-radius: 10px;
+}
+
+.material-symbols-outlined:hover{
+  color: red;
+}
+
+.material-symbols-outlined{
+font-size: 30px;
+color: black;
 }

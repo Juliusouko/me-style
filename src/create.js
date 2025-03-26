@@ -1,28 +1,23 @@
-// javascript for details.html
-const id = new URLSearchParams(window.location.search).get('id');
-const container = document.querySelector('.details');
-const deleteBtn = document.querySelector('.delete');
 
-const renderDetails = async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id);
-  if (!res.ok) {
-    window.location.replace("/");
+// javascript for create.html
+const form = document.querySelector('form');
+
+const createPost = async (e) => {
+  e.preventDefault();
+
+  const doc = {
+    title: form.title.value,
+    body: form.body.value,
+    likes: 0,
   }
-  const post = await res.json();
 
-  const template = `
-    <h1>${post.title}</h1>
-    <p>${post.body}</p>
-  `
+  await fetch('http://localhost:3000/posts', {
+    method: 'POST',
+    body: JSON.stringify(doc),
+    headers: { 'Content-Type': 'application/json' }
+  })
 
-  container.innerHTML = template;
+  window.location.replace('/')
 }
 
-deleteBtn.addEventListener('click', async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id, {
-    method: 'DELETE'
-  });
-  window.location.replace("/");
-})
-
-window.addEventListener('DOMContentLoaded', renderDetails);
+form.addEventListener('submit', createPost);
