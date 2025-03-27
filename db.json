@@ -2,21 +2,27 @@
   "posts": [
     {
       "id": "1",
-      "likes": 30,
+      "likes": 35,
       "title": "nike",
       "body": "nike shoes"
     },
     {
       "id": "2",
-      "likes": 15,
+      "likes": 1005,
       "title": "puma",
       "body": "This is puma rs shoes"
     },
     {
       "title": "addidas",
       "body": "This is addidas shoes",
-      "likes": 89,
+      "likes": 91,
       "id": "3"
+    },
+    {
+      "id": "2481",
+      "title": "naked wolf",
+      "body": "this is a new shoe\n",
+      "likes": 12
     }
   ],
   "polls": [
