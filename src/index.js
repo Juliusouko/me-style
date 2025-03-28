@@ -4,7 +4,7 @@ const searchForm = document.querySelector('.search');
 
 const renderPosts = async (term) => {
   console.log(term);
-  let uri = 'http://localhost:3000/posts?_sort=likes&_order=asc';
+  let uri = 'https://database-2-w43g.onrender.com/posts?_sort=likes&_order=asc';
   if (term) {
     uri += `&q=${term}`;
   }

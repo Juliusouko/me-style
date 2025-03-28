@@ -4,7 +4,7 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id);
+  const res = await fetch('https://database-2-w43g.onrender.com/posts' + id);
   if (!res.ok) {
     window.location.replace("/");
   }
@@ -19,7 +19,7 @@ const renderDetails = async () => {
 }
 
 deleteBtn.addEventListener('click', async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id, {
+  const res = await fetch('https://database-2-w43g.onrender.com/posts' + id, {
     method: 'DELETE'
   });
   window.location.replace("/");

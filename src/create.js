@@ -11,7 +11,7 @@ const createPost = async (e) => {
     likes: 0,
   }
 
-  await fetch('http://localhost:3000/posts', {
+  await fetch('https://database-2-w43g.onrender.com/posts', {
     method: 'POST',
     body: JSON.stringify(doc),
     headers: { 'Content-Type': 'application/json' }
