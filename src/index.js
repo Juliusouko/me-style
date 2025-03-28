@@ -27,7 +27,7 @@ const renderPosts = async (term) => {
     detailsText.innerHTML = post.body.slice(0, 50)
 
     let detailsLink = document.createElement('a')
-    detailsLink.setAttribute('href', `/details.html?id=${post.id}`)
+    detailsLink.setAttribute('href', `https://database-2-w43g.onrender.com/posts/details.html?id=${post.id}`)
 
     detailsLink.innerHTML = 'Details'
 
@@ -53,7 +53,7 @@ const renderPosts = async (term) => {
         const newLikes = parseInt(likesCount.textContent) + 1
         likesCount.textContent = newLikes
 
-        const response = await fetch(`http://localhost:3000/posts/${post.id}`, {
+        const response = await fetch(`https://database-2-w43g.onrender.com/posts/${post.id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',

@@ -4,8 +4,7 @@ Me style is a simple fashion interest posting application.
 
 ## description
 
-## badges
-## visuals
-## installation
-## usage
-## support
+
+## deployed link
+https://me-style.vercel.app/
+
